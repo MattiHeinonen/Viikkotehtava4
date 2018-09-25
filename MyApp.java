@@ -1,6 +1,7 @@
 public class MyApp {
 		public static void main(String[] args) {
-			Product product = new Product("Edam", 3.3, 120);      
+			Product product = new Product("Edam", 3.3, 120); 
+			product.ChangePrice(4.1);
 			System.out.println("Product value is " + product.countValue());      
 			product.printProduct();      
 	 } 
@@ -23,5 +24,10 @@ public class MyApp {
 					System.out.printf("Product %s, price %4.1f and balance %d pcs",
 					name,price,amount);  
 			} 
+			
+			public void ChangePrice(double newPrice)
+			{
+				price = newPrice;
+			}
 					
 } 
